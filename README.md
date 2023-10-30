@@ -1,6 +1,7 @@
 # First
 OPAN 243
 
+You must first follow the [setup instructions](https://github.com/prof-rossetti/intro-to-python/blob/main/notes/python/packages/sendgrid.md) to create an account, verify your account, setup a single sender, and obtain an API Key.
 
 ## Setup
 
@@ -48,7 +49,7 @@ python app/unemployment.py
 Install Packages:
 
 ```sh
-pip install -n requirements.txt
+pip install -r requirements.txt
 ```
 
 
