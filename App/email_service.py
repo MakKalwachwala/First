@@ -60,3 +60,14 @@ send_email(html_content=my_content, recipient_address=user_address)
 
 
 #send_email(html_content=my_content)
+
+if __name__ == "__main__":
+
+    # ONLY WANT TO DO IF RUNNING THIS FILE FROM COMMAND LINE
+    # (NOT IF IMPORTING A FUNCTION FROM THIS FILE)
+    user_address = input("Please enter your email address: ")
+
+    my_content = """
+        ... 
+    """
+    send_email(html_content=my_content, recipient_address=user_address)
