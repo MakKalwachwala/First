@@ -37,7 +37,7 @@ Run the example script:
 python app/my_script.py
 
 
-Run unemploymeny report
+Run unemployment report
 
 
 ```sh
@@ -54,5 +54,10 @@ pip install -r requirements.txt
 
 
 
+## Testing
 
+Run tests:
 
+'''sh
+pytest
+'''

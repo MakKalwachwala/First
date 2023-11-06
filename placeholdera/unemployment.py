@@ -25,6 +25,8 @@ print (API_KEY)
 
 load_dotenv()
 
+latest_rate = data[0]['value']
+latest_date = data[0]["date"]
 
 
 request_url = f"https://www.alphavantage.co/query?function=UNEMPLOYMENT&apikey={API_KEY}"
@@ -78,8 +80,7 @@ fig.show()
 user_address = input("Please enter your email address: ")
 
 
-latest_rate = data[0]['value']
-latest_date = data[0]["date"]
+
 
 content = f"""
 <h1> Unemployment Report Email </h1>
