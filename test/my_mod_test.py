@@ -11,3 +11,4 @@ def test_example():
 
 def test_enlarge():
     assert enlarge(10) == 1000
+
