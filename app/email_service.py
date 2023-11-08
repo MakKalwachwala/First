@@ -11,7 +11,7 @@ load_dotenv() # go look in the .env file for any env vars
 SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY")
 SENDER_ADDRESS = os.getenv("SENDER_ADDRESS")
 
-USER_ADDRESS = input( "Please enter your email address: ")
+
 
 
 def send_email(recipient_address=SENDER_ADDRESS, subject="[Shopping Cart App] Testing 123", html_content="<p>Hello World</p>"):
@@ -31,10 +31,17 @@ def send_email(recipient_address=SENDER_ADDRESS, subject="[Shopping Cart App] Te
         print(response.status_code) #> 202 indicates SUCCESS
         print(response.body)
         print(response.headers)
+        return response.status_code
 
     except Exception as err:
         print(type(err))
         print(err)
+        return None
+
+
+
+
+
 
 
 my_content = """
@@ -55,19 +62,4 @@ my_content = """
         <li>Strawberry</li>
     </ul>
 """
-
-send_email(html_content=my_content, recipient_address=user_address)
-
-
-#send_email(html_content=my_content)
-
-if __name__ == "__main__":
-
-    # ONLY WANT TO DO IF RUNNING THIS FILE FROM COMMAND LINE
-    # (NOT IF IMPORTING A FUNCTION FROM THIS FILE)
-    user_address = input("Please enter your email address: ")
-
-    my_content = """
-        ... 
-    """
-    send_email(html_content=my_content, recipient_address=user_address)
+send_email(html_content=my_content)
