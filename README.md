@@ -51,6 +51,16 @@ Install Packages:
 pip install -r requirements.txt
 ```
 
+# Mac OS:
+FLASK_APP=web_app 
+flask run
+
+# Windows OS:
+# ... if `export` doesn't work for you, try `set` instead
+# ... or set FLASK_APP variable via ".env" file
+export FLASK_APP=web_app flask run
+
+
 
 
 ## Testing
@@ -60,3 +70,5 @@ Run tests:
 '''sh
 pytest
 '''
+
+
