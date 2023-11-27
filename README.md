@@ -44,6 +44,10 @@ Run unemployment report
 python app/unemployment.py
 ```
 
+Run the stocks report:
+```sh
+python -m app.stocks
+```
 
 Install Packages:
 
