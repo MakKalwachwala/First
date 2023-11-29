@@ -18,3 +18,8 @@ pytest
 flask
 
 gunicorn
+
+IPython
+
+pgeocode
+
