@@ -15,6 +15,11 @@ pandas
 
 pytest
 
+flask
+
+gunicorn
+
 IPython
 
 pgeocode
+
